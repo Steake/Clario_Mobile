@@ -1,0 +1,22 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Redirect all routes to index.html for SPA routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Environment variables (configure these in Netlify UI)
+[context.production.environment]
+  GEMINI_API_KEY = ""
+
+[context.deploy-preview.environment]
+  GEMINI_API_KEY = ""
+
+[context.branch-deploy.environment]
+  GEMINI_API_KEY = ""
