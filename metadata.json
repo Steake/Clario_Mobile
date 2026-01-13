@@ -1,0 +1,8 @@
+{
+  "name": "Clario - Decentralized Learning Marketplace",
+  "description": "A robust, crypto-native learning marketplace connecting students with AI and human tutors, featuring trust scores, escrow payments, and AI-powered tutoring sessions.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
